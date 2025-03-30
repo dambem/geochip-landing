@@ -1,0 +1,19 @@
+h1 {
+    background: linear-gradient(to right, #ff4081, #3f51b5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.noise {
+    background:
+      url(./assets/radial.svg);
+      filter: contrast(100%) brightness(100%);
+      background-size: cover;
+}
+
+.noise_bg {
+    /* ... */
+    background:
+      url(./assets/noise.svg);
+      filter: contrast(100%) brightness(100%);
+  }
