@@ -22,7 +22,7 @@ function Model({ url }) {
   
   useFrame((state) => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.005
+      modelRef.current.rotation.y -= 0.002
     }
   })
   
@@ -34,7 +34,7 @@ function About() {
 
   return (
     <section id="hero" className="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
-      <div className="rounded-lg shadow-xl noise h-96 w-full overflow-hidden">
+      <div className="rounded-lg shadow-xl noise h-dvh w-full overflow-hidden">
         <Canvas camera={{ position: [0, 2, 2], fov: 50 }}>
           <Suspense fallback={null}>
             <ambientLight intensity={0.1} />
