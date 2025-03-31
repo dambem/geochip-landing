@@ -8,8 +8,7 @@ h1 {
     background:
       url(./assets/radial.svg);
       filter: contrast(100%) brightness(100%);
-      background-size: contain;
-      background-repeat: no-repeat;
+      background-size: cover;
 }
 
 .noise_2 {
@@ -24,6 +23,8 @@ h1 {
     background:
       url(./assets/noise.svg);
       filter: contrast(100%) brightness(100%);
+      background-size: cover;
+
   }
 
 html {

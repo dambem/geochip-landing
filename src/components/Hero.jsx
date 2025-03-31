@@ -33,7 +33,7 @@ function Hero() {
     <section id="hero" className="container mx-auto px-4 py-16 grid lg:grid-cols-2 gap-8 items-center">
       <div>
         <h1 className="text-5xl font-bold mb-6 leading-tight">Transform Places into Art</h1>
-        <p className="text-xl text-gray-600 mb-8">We create intricate 3D representations that turn geographical landscapes into stunning, tactile masterpieces.</p>
+        <p className="text-xl  mb-8">We create intricate 3D representations that turn geographical landscapes into stunning, tactile memories.</p>
         <a href="#contact" className="bg-sky-600/50 text-white px-6 py-3 rounded-xl shadow-xl hover:bg-sky-700 transition">Get Your Custom Print</a>
       </div>
       <div className="rounded-lg shadow-xl noise h-96 w-full overflow-hidden">
