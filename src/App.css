@@ -11,6 +11,13 @@ h1 {
       background-size: cover;
 }
 
+.noise_2 {
+    background:
+      url(./assets/radial_2.svg);
+      filter: contrast(100%) brightness(100%);
+      background-size: cover;
+}
+
 .noise_bg {
     /* ... */
     background:

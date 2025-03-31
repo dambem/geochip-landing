@@ -29,5 +29,5 @@
   </defs>
   
   <!-- Single transparent rectangle with the combined effect -->
-  <rect width="400" height="300" fill="#4a7bcc" opacity="0.7" filter="url(#fractalAndDither)"/>
+  <rect width="800" height="1800" fill="#4a7bcc" opacity="0.7" filter="url(#fractalAndDither)"/>
 </svg>

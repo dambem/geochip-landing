@@ -13,10 +13,9 @@ import './App.css'
 function App() {
   return (
     <>
-    <div className='noise_bg'>
       <Navbar></Navbar>
 
-      <main className='pt-20'>
+      <main className='noise_bg pt-20'>
         <Hero className='shadow-xl'></Hero>
         <About></About>
         <Services></Services>
@@ -24,7 +23,6 @@ function App() {
         <Contact></Contact>
       </main>
       <Footer/>
-      </div>
     </>
   )
 }
