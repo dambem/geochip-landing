@@ -13,8 +13,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <Navbar></Navbar>
-
+      <Navbar ></Navbar>
       <main className='noise_bg pt-20'>
         <Hero className='shadow-xl'></Hero>
         <About></About>

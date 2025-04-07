@@ -30,3 +30,24 @@ h1 {
 html {
   background-color: #161616;
 }
+
+.backdrop {
+
+  height: 150px;
+  background: linear-gradient(
+    to bottom,
+    /*
+      Replace this with your site’s
+      actual background color:
+    */
+    hsla(0, 0%, 0%, 0.307) 0%,
+    transparent 50%
+  );
+  backdrop-filter: blur(16px);
+  mask-image: linear-gradient(
+    to bottom,
+    black 0% 50%,
+    transparent 50% 100%
+  );
+  pointer-events: none;
+}
