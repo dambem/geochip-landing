@@ -18,17 +18,19 @@ function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: '#services', label: 'Services' },
     { href: '#about', label: 'About' },
+    { href: '#services', label: 'Services' },
     { href: '#contact', label: 'Commission' }
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
 
-      <nav className="relative">
+      <nav         className={`relative transition-all duration-300 ${
+          scrolled ? 'bg-gray-100/90 backdrop-blur-sm shadow-md' : 'bg-transparent'
+        }`}>
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="flex justify-between items-center py-5">
+          <div className="flex justify-between items-center py-5 ">
             {/* Logo Section */}
             <motion.a 
               href="#"

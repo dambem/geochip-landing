@@ -101,14 +101,7 @@ function About() {
               color="#87CEEB"
             />
             <Model url={modelPath} />
-            <OrbitControls 
-              enablePan={false}
-              enableZoom={true}
-              minPolarAngle={Math.PI / 6}
-              maxPolarAngle={Math.PI / 2}
-              dampingFactor={0.05}
-              autoRotate={false}
-            />
+
             <Environment preset="sunset" />
           
 
