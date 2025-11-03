@@ -133,7 +133,7 @@ function Contact() {
               <h3 className="text-sm font-mono text-gray-400 uppercase tracking-wider mb-6">Quick Start</h3>
               
               <a 
-                href="https://www.etsy.com/uk/shop/geochipuk" 
+                href="https://www.etsy.com/shop/GeoChipUK" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group block mb-6 p-6 border border-gray-200 hover:border-gray-400 transition-all duration-200"
