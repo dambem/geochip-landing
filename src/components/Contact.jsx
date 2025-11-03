@@ -46,7 +46,7 @@ function Contact() {
               {/* REQUIRED StaticForms hidden fields */}
               <input type="hidden" name="apiKey" value="sf_6c3el1a7nbllbkhmea6e3ed4" />
               {/* <input type="hidden" name="subject" value={`New ${formData.service} inquiry from website`} /> */}
-              <input type="hidden" name="redirectTo" value="https://geochip.co.uk" />
+              <input type="hidden" name="redirectTo" value="www.geochip.uk" />
 
               {/* Service Selection */}
               <div>
