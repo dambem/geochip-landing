@@ -10,40 +10,12 @@ function Contact() {
   })
 
   const serviceOptions = [
-    {
-      id: 'general',
-      label: 'General Inquiry',
-      placeholder: 'How can we help you?'
-    },
-    {
-      id: 'personal',
-      label: 'Personal Commission',
-      placeholder: 'Describe the location or piece you\'d like created...'
-    },
-    {
-      id: 'corporate',
-      label: 'Corporate Order',
-      placeholder: 'Tell us about your event, team size, and timeline...'
-    },
-    {
-      id: 'data',
-      label: 'Data Visualization',
-      placeholder: 'Describe your data and visualization needs...'
-    },
-    {
-      id: 'installation',
-      label: 'Installation Project',
-      placeholder: 'Share your vision for the space and experience...'
-    }
+    { id: 'general', label: 'General Inquiry', placeholder: 'How can we help you?' },
+    { id: 'personal', label: 'Personal Commission', placeholder: "Describe the location or piece you'd like created..." },
+    { id: 'corporate', label: 'Corporate Order', placeholder: 'Tell us about your event, team size, and timeline...' },
+    { id: 'data', label: 'Data Visualization', placeholder: 'Describe your data and visualization needs...' },
+    { id: 'installation', label: 'Installation Project', placeholder: 'Share your vision for the space and experience...' }
   ]
-
-  const handleSubmit = () => {
-    // Handle form submission
-    console.log('Form submitted:', formData)
-    // You would typically send this to your email service
-    const mailtoLink = `mailto:hello@yourcompany.com?subject=${encodeURIComponent(`${serviceOptions.find(opt => opt.id === formData.service)?.label} Inquiry`)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`
-    window.location.href = mailtoLink
-  }
 
   const handleChange = (e) => {
     setFormData({
@@ -66,7 +38,16 @@ function Contact() {
         <div className="grid md:grid-cols-12 gap-12">
           {/* Contact Form - Left Side */}
           <div className="md:col-span-7">
-            <div className="space-y-6">
+            <form
+              action="https://api.staticforms.xyz/submit"
+              method="POST"
+              className="space-y-6"
+            >
+              {/* REQUIRED StaticForms hidden fields */}
+              <input type="hidden" name="apiKey" value="sf_6c3el1a7nbllbkhmea6e3ed4" />
+              {/* <input type="hidden" name="subject" value={`New ${formData.service} inquiry from website`} /> */}
+              <input type="hidden" name="redirectTo" value="https://geochip.co.uk" />
+
               {/* Service Selection */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-3">
@@ -76,11 +57,12 @@ function Contact() {
                   {serviceOptions.map((option) => (
                     <button
                       key={option.id}
+                      type="button"
                       onClick={() => {
                         setSelectedService(option.id)
                         setFormData({ ...formData, service: option.id })
                       }}
-                      className={`rounded-full  px-4 py-2 text-sm border transition-all duration-200 ${
+                      className={`rounded-full px-4 py-2 text-sm border transition-all duration-200 ${
                         selectedService === option.id
                           ? 'border-gray-900 bg-gray-900 text-white'
                           : 'border-gray-300 text-gray-600 hover:border-gray-400'
@@ -90,14 +72,13 @@ function Contact() {
                     </button>
                   ))}
                 </div>
+                <input type="hidden" name="service" value={formData.service} />
               </div>
 
-              {/* Name and Email Grid */}
+              {/* Name and Email */}
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className=" block text-sm font-medium text-gray-700 mb-2">
-                    Name
-                  </label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                   <input
                     type="text"
                     name="name"
@@ -105,12 +86,11 @@ function Contact() {
                     onChange={handleChange}
                     className="rounded-full w-full px-4 py-2 border border-gray-300 focus:border-gray-500 focus:outline-none transition-colors"
                     placeholder="Your name"
+                    required
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Email
-                  </label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                   <input
                     type="email"
                     name="email"
@@ -118,15 +98,14 @@ function Contact() {
                     onChange={handleChange}
                     className="rounded-full w-full px-4 py-2 border border-gray-300 focus:border-gray-500 focus:outline-none transition-colors"
                     placeholder="your@email.com"
+                    required
                   />
                 </div>
               </div>
 
               {/* Message */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Message
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                 <textarea
                   name="message"
                   rows={6}
@@ -134,26 +113,25 @@ function Contact() {
                   onChange={handleChange}
                   placeholder={serviceOptions.find(opt => opt.id === selectedService)?.placeholder}
                   className="w-full px-4 py-3 border border-gray-300 focus:border-gray-500 focus:outline-none transition-colors resize-none"
+                  required
                 />
               </div>
 
               {/* Submit Button */}
               <button
-                onClick={handleSubmit}
+                type="submit"
                 className="rounded-full px-8 py-3 bg-gray-900 text-white hover:bg-gray-800 transition-colors duration-200"
               >
                 Send Message
               </button>
-            </div>
+            </form>
           </div>
 
           {/* Quick Links - Right Side */}
           <div className="md:col-span-5 md:pl-12">
-            {/* Quick Actions */}
             <div className="mb-12">
               <h3 className="text-sm font-mono text-gray-400 uppercase tracking-wider mb-6">Quick Start</h3>
               
-              {/* Etsy Shop Link */}
               <a 
                 href="https://www.etsy.com/uk/shop/geochipuk" 
                 target="_blank" 
@@ -171,7 +149,6 @@ function Contact() {
                 </div>
               </a>
 
-              {/* Instagram Link */}
               <a 
                 href="https://instagram.com/geochipuk" 
                 target="_blank" 
@@ -209,7 +186,6 @@ function Contact() {
               </div>
             </div>
 
-            {/* Direct Email Option */}
             <div className="mt-8 p-6 bg-gray-50 border border-gray-200">
               <p className="text-sm text-gray-600 mb-2">Prefer email?</p>
               <a 
