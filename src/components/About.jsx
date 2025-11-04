@@ -150,15 +150,15 @@ function About() {
         <article className="prose lg:prose-xl text-gray-900">
           <h1>My Approach</h1>
           <p>
-          <b>Data as Narrative:</b> Every elevation change, river, building and traffic pattern tells a story about how we live - I love to explore what makes places unique, and find the beauty therein.
+          <b>Geography as Story:</b> Every elevation change, building and traffic pattern tells a story about how we live - I love to explore what makes places unique, and find the beauty therein.
           </p>
           <br></br>
           <p>
-          <b>Technology with Purpose:</b> I harness cutting-edge technology not for its own sake, but to reveal new perspectives on familiar places
+          <b>Technology with Purpose:</b> I harness cutting-edge technology not for its own sake, but to reveal new perspectives on familiar places. I integrate a range of technology specific to the project needs, from 3D printing to AR/VR to interactive web maps.
           </p>
           <br></br>
           <p>
-          <b>Tangible Geography:</b> From the density of urban development, to the peaks and valleys of national parks, I love to turn abstract geospatial data into something vibrant and interactable.
+          <b>Personalised Process:</b> I'm here to create a personalised process based on what you need. Whether you're a small business looking for a unique map or a city planner wanting to visualise urban data, I adapt my approach to fit your goals. 
           </p>
         </article>
       </div>

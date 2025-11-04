@@ -84,9 +84,9 @@ function Hero() {
             
         <h1 className="text-5xl lg:text-6xl font-light leading-tight text-[#2C2826]">
           Transforming Places,
-          <span className="block text-amber-700 font-normal"> Into Art </span>
+          <span className="block text-amber-700 font-normal"> Into Experiences </span>
         </h1>
-        <p className="text-xl  mb-8">GeoChip brings locations to life through innovative geospatial experiences. From interactive maps for local businesses to collectible representations of iconic landmarks. We merge technology, design and location to create memorable and shareable experiences.</p>
+        <p className="text-xl  mb-8">GeoChip brings locations to life through innovative geospatial experiences. <br></br>We create anything from interactive maps for local businesses to collectible representations of iconic landmarks.</p>
         <div className="flex flex-wrap gap-4 text-sm text-gray-600">
           <div className="flex items-center gap-2">
             <svg className="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
@@ -98,13 +98,13 @@ function Hero() {
             <svg className="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <span>4-6 week delivery</span>
+            <span>Personalised delivery plan</span>
           </div>
           <div className="flex items-center gap-2">
             <svg className="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
-            <span>Lifetime warranty</span>
+            <span>Clear consultancy process</span>
           </div>
         </div>
             

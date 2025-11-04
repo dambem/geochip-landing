@@ -169,25 +169,25 @@ function Contact() {
 
             {/* Response Time */}
             <div className="border-t border-gray-200 pt-8">
-              <h3 className="text-sm font-mono text-gray-400 uppercase tracking-wider mb-4">Response Times</h3>
+              <h3 className="text-sm font-mono text-gray-400 uppercase tracking-wider mb-4">Consultation Costs</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Personal Commissions</span>
-                  <span className="text-gray-900 font-medium">24-48 hours</span>
+                  <span className="text-gray-900 font-medium">Free 15 minute consultation call</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Corporate Orders</span>
-                  <span className="text-gray-900 font-medium">1-2 business days</span>
+                  <span className="text-gray-900 font-medium">Free 15 minute consulation call / £50 - one hour design call</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Large Installations</span>
-                  <span className="text-gray-900 font-medium">2-3 business days</span>
+                  <span className="text-gray-900 font-medium">Free 15 minute connsulation call / enquire for Pricing</span>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 p-6 bg-gray-50 border border-gray-200">
-              <p className="text-sm text-gray-600 mb-2">Prefer email?</p>
+              <p className="text-sm text-gray-600 mb-2">Prefer to email direct?</p>
               <a 
                 href="mailto:damianbemben@geochip.uk" 
                 className="text-gray-900 font-medium hover:text-gray-700 transition-colors"

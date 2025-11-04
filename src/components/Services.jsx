@@ -17,7 +17,7 @@ function Services() {
       description: 'Ready-made pieces and custom single commissions. Transform meaningful coordinates into tangible art.',
       capabilities: [
         'Curated iconic locations',
-        'Custom coordinates',
+        'Custom locations available',
         '10cm² to 50cm² sizes',
         'Ships in 2-5 days'
       ],
@@ -46,6 +46,7 @@ function Services() {
       cta: {
         primary: 'Get Quote',
         secondary: 'Examples',
+        link: '#contact'
       },
       image: 'bg-[url(./assets/canary_wharf3.png)]',
       mapPattern: 'M5,15 L10,10 L15,12 L20,8 L25,11 L30,7 L35,15',
@@ -55,18 +56,20 @@ function Services() {
       id: 'enterprise',
       number: '03',
       scale: 'Journey',
-      title: 'Data Visualization',
+      title: 'Geospatial Applications',
       tagline: 'Patterns revealed',
       description: 'Transform complex geospatial data into compelling visual narratives for analysis and decision-making.',
       capabilities: [
-        'Interactive web apps',
+        'Interactive AR/XR web apps',
         'Real-time data',
         'Custom algorithms',
         'API integration'
       ],
       cta: {
         primary: 'Start Project',
-        secondary: 'Case Studies'
+        secondary: 'Case Studies',
+        link: '#contact'
+
       },
       image: 'bg-[url(./assets/winchester6.png)]',
       mapPattern: 'M5,12 Q15,5 25,12 T45,12',
@@ -87,7 +90,9 @@ function Services() {
       ],
       cta: {
         primary: 'Let\'s Talk',
-        secondary: 'Portfolio'
+        secondary: 'Portfolio',
+        link: '#contact',
+
       },
       image: 'bg-[url(./assets/image_1.png)]',
       mapPattern: 'M5,10 L10,8 L15,10 L20,6 L25,10 L30,7 L35,10 L40,8',
@@ -227,8 +232,8 @@ function Services() {
                     {tier.cta.link ? (
                       <a 
                         href={tier.cta.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        // target="_blank"
+                        // rel="noopener noreferrer"
                         className={`rounded-full shadow-xl px-6 py-2 text-sm bg-gradient-to-r ${tier.gradient} text-white font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200`}
                       >
                         {tier.cta.primary}
